@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-type BurpRun struct {
+type Run struct {
 	Items []Item `xml:"item" json:"item"`
 }
 
@@ -54,13 +54,13 @@ func (item *Item) getBase64DecodedIfRequired(content string, base64Encoded bool)
 	return content
 }
 
-func Parse(content []byte) (*BurpRun, error) {
-	r := &BurpRun{}
+func Parse(content []byte) (*Run, error) {
+	r := &Run{}
 	err := xml.Unmarshal(content, r)
 	return r, err
 }
 
-func ParseFromFile(fileName string) (*BurpRun, error) {
+func ParseFromFile(fileName string) (*Run, error) {
 	data, err := os.ReadFile(fileName)
 	if err != nil {
 		return nil, err
