@@ -1,0 +1,60 @@
+<?xml version="1.1"?>
+<!-- NOTE: Any NULL bytes in requests and responses are preserved within this output, even though this strictly breaks the XML syntax. If your XML parser rejects the NULL bytes then you will need to remove or replace these bytes before parsing. Alternatively, you can use the option to base64-encode requests and responses. -->
+<!DOCTYPE items [
+<!ELEMENT items (item*)>
+<!ATTLIST items burpVersion CDATA "">
+<!ATTLIST items exportTime CDATA "">
+<!ELEMENT item (time, url, host, port, protocol, method, path, extension, request, status, responselength, mimetype, response, comment)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ATTLIST host ip CDATA "">
+<!ELEMENT port (#PCDATA)>
+<!ELEMENT protocol (#PCDATA)>
+<!ELEMENT method (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT extension (#PCDATA)>
+<!ELEMENT request (#PCDATA)>
+<!ATTLIST request base64 (true|false) "false">
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT responselength (#PCDATA)>
+<!ELEMENT mimetype (#PCDATA)>
+<!ELEMENT response (#PCDATA)>
+<!ATTLIST response base64 (true|false) "false">
+<!ELEMENT comment (#PCDATA)>
+]>
+<items burpVersion="2023.1.2" exportTime="Sat Mar 04 08:14:09 CET 2023">
+  <item>
+    <time>Thu Mar 02 20:06:44 CET 2023</time>
+    <url><![CDATA[http://10.129.204.197/api/check-username.php?u=maria]]></url>
+    <host ip="10.129.204.197">10.129.204.197</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/api/check-username.php?u=maria]]></path>
+    <extension>php</extension>
+    <request base64="false"><![CDATA[GET /api/check-username.php?u=maria HTTP/1.1
+Host: 10.129.204.197
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.78 Safari/537.36
+Accept: */*
+Referer: http://10.129.204.197/signup.php
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Connection: close
+
+]]></request>
+    <status>200</status>
+    <responselength>213</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Date: Thu, 02 Mar 2023 19:07:25 GMT
+Server: Apache/2.4.54 (Win64) PHP/8.1.13
+X-Powered-By: PHP/8.1.13
+Content-Length: 18
+Connection: close
+Content-Type: application/json
+
+{"status":"taken"}]]></response>
+    <comment></comment>
+  </item>
+</items>

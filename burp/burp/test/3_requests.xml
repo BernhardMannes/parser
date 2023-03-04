@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!DOCTYPE items [
+<!ELEMENT items (item*)>
+<!ATTLIST items burpVersion CDATA "">
+<!ATTLIST items exportTime CDATA "">
+<!ELEMENT item (time, url, host, port, protocol, method, path, extension, request, status, responselength, mimetype, response, comment)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ATTLIST host ip CDATA "">
+<!ELEMENT port (#PCDATA)>
+<!ELEMENT protocol (#PCDATA)>
+<!ELEMENT method (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT extension (#PCDATA)>
+<!ELEMENT request (#PCDATA)>
+<!ATTLIST request base64 (true|false) "false">
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT responselength (#PCDATA)>
+<!ELEMENT mimetype (#PCDATA)>
+<!ELEMENT response (#PCDATA)>
+<!ATTLIST response base64 (true|false) "false">
+<!ELEMENT comment (#PCDATA)>
+]>
+<items burpVersion="2023.1.2" exportTime="Fri Mar 03 20:03:19 CET 2023">
+  <item>
+    <time>Thu Mar 02 20:06:37 CET 2023</time>
+    <url><![CDATA[http://10.129.204.197/static/js/signup.js]]></url>
+    <host ip="10.129.204.197">10.129.204.197</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/static/js/signup.js]]></path>
+    <extension>js</extension>
+    <request base64="true"><![CDATA[R0VUIC9zdGF0aWMvanMvc2lnbnVwLmpzIEhUVFAvMS4xDQpIb3N0OiAxMC4xMjkuMjA0LjE5Nw0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzExMC4wLjU0ODEuNzggU2FmYXJpLzUzNy4zNg0KQWNjZXB0OiAqLyoNClJlZmVyZXI6IGh0dHA6Ly8xMC4xMjkuMjA0LjE5Ny9zaWdudXAucGhwDQpBY2NlcHQtRW5jb2Rpbmc6IGd6aXAsIGRlZmxhdGUNCkFjY2VwdC1MYW5ndWFnZTogZW4tVVMsZW47cT0wLjkNCkNvbm5lY3Rpb246IGNsb3NlDQoNCg==]]></request>
+    <status>200</status>
+    <responselength>1277</responselength>
+    <mimetype>script</mimetype>
+    <response base64="true"><![CDATA[SFRUUC8xLjEgMjAwIE9LDQpEYXRlOiBUaHUsIDAyIE1hciAyMDIzIDE5OjA3OjA2IEdNVA0KU2VydmVyOiBBcGFjaGUvMi40LjU0IChXaW42NCkgUEhQLzguMS4xMw0KTGFzdC1Nb2RpZmllZDogRnJpLCAxNiBEZWMgMjAyMiAwOTowNjo1OSBHTVQNCkVUYWc6ICIzZWQtNWVmZWU0YWM2YTlkOSINCkFjY2VwdC1SYW5nZXM6IGJ5dGVzDQpDb250ZW50LUxlbmd0aDogMTAwNQ0KQ29ubmVjdGlvbjogY2xvc2UNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vamF2YXNjcmlwdA0KDQpmdW5jdGlvbiBjaGVja1VzZXJuYW1lKCkgewogICAgdmFyIHhociA9IG5ldyBYTUxIdHRwUmVxdWVzdCgpOwogICAgeGhyLm9ucmVhZHlzdGF0ZWNoYW5nZSA9IGZ1bmN0aW9uKCkgewogICAgICAgIGlmICh0aGlzLnJlYWR5U3RhdGUgPT0gNCAmJiB0aGlzLnN0YXR1cyA9PSAyMDApIHsKICAgICAgICAgICAgdmFyIGpzb24gPSBKU09OLnBhcnNlKHhoci5yZXNwb25zZVRleHQpOwogICAgICAgICAgICB2YXIgdXNlcm5hbWUgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgidXNlcm5hbWVJbnB1dCIpLnZhbHVlOwogICAgICAgICAgICB1c2VybmFtZSA9IHVzZXJuYW1lLnJlcGxhY2UoLyYvZywgJyZhbXA7JykucmVwbGFjZSgvPC9nLCAnJmx0OycpLnJlcGxhY2UoLz4vZywgJyZndDsnKS5yZXBsYWNlKC8iL2csICcmcXVvdDsnKTsKICAgICAgICAgICAgdmFyIHVzZXJuYW1lSGVscCA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJ1c2VybmFtZUhlbHAiKTsKICAgICAgICAgICAgCiAgICAgICAgICAgIGlmIChqc29uWydzdGF0dXMnXSA9PT0gJ2F2YWlsYWJsZScpIHsKICAgICAgICAgICAgICAgIHVzZXJuYW1lSGVscC5pbm5lckhUTUwgPSAiPHNwYW4gc3R5bGU9J2NvbG9yOmdyZWVuJz5UaGUgdXNlcm5hbWUgJyIgKyB1c2VybmFtZSArICInIGlzIDxiPmF2YWlsYWJsZTwvYj48L3NwYW4+IjsKICAgICAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgICAgIHVzZXJuYW1lSGVscC5pbm5lckhUTUwgPSAiPHNwYW4gc3R5bGU9J2NvbG9yOnJlZCc+VGhlIHVzZXJuYW1lICciICsgdXNlcm5hbWUgKyAiJyBpcyA8Yj50YWtlbjwvYj4sIHBsZWFzZSB1c2UgYSBkaWZmZXJlbnQgb25lPC9zcGFuPiI7CiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9OwogICAgeGhyLm9wZW4oIkdFVCIsICIvYXBpL2NoZWNrLXVzZXJuYW1lLnBocD91PSIgKyBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgidXNlcm5hbWVJbnB1dCIpLnZhbHVlLCB0cnVlKTsKICAgIHhoci5zZW5kKCk7Cn0=]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Mar 02 20:06:44 CET 2023</time>
+    <url><![CDATA[http://10.129.204.197/api/check-username.php?u=maria]]></url>
+    <host ip="10.129.204.197">10.129.204.197</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/api/check-username.php?u=maria]]></path>
+    <extension>php</extension>
+    <request base64="true"><![CDATA[R0VUIC9hcGkvY2hlY2stdXNlcm5hbWUucGhwP3U9bWFyaWEgSFRUUC8xLjENCkhvc3Q6IDEwLjEyOS4yMDQuMTk3DQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTEwLjAuNTQ4MS43OCBTYWZhcmkvNTM3LjM2DQpBY2NlcHQ6ICovKg0KUmVmZXJlcjogaHR0cDovLzEwLjEyOS4yMDQuMTk3L3NpZ251cC5waHANCkFjY2VwdC1FbmNvZGluZzogZ3ppcCwgZGVmbGF0ZQ0KQWNjZXB0LUxhbmd1YWdlOiBlbi1VUyxlbjtxPTAuOQ0KQ29ubmVjdGlvbjogY2xvc2UNCg0K]]></request>
+    <status>200</status>
+    <responselength>213</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true"><![CDATA[SFRUUC8xLjEgMjAwIE9LDQpEYXRlOiBUaHUsIDAyIE1hciAyMDIzIDE5OjA3OjI1IEdNVA0KU2VydmVyOiBBcGFjaGUvMi40LjU0IChXaW42NCkgUEhQLzguMS4xMw0KWC1Qb3dlcmVkLUJ5OiBQSFAvOC4xLjEzDQpDb250ZW50LUxlbmd0aDogMTgNCkNvbm5lY3Rpb246IGNsb3NlDQpDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24NCg0KeyJzdGF0dXMiOiJ0YWtlbiJ9]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Mar 02 20:06:52 CET 2023</time>
+    <url><![CDATA[http://10.129.204.197/api/register.php]]></url>
+    <host ip="10.129.204.197">10.129.204.197</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/api/register.php]]></path>
+    <extension>php</extension>
+    <request base64="true"><![CDATA[UE9TVCAvYXBpL3JlZ2lzdGVyLnBocCBIVFRQLzEuMQ0KSG9zdDogMTAuMTI5LjIwNC4xOTcNCkNvbnRlbnQtTGVuZ3RoOiAwDQpDYWNoZS1Db250cm9sOiBtYXgtYWdlPTANClVwZ3JhZGUtSW5zZWN1cmUtUmVxdWVzdHM6IDENCk9yaWdpbjogaHR0cDovLzEwLjEyOS4yMDQuMTk3DQpDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL3gtd3d3LWZvcm0tdXJsZW5jb2RlZA0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzExMC4wLjU0ODEuNzggU2FmYXJpLzUzNy4zNg0KQWNjZXB0OiB0ZXh0L2h0bWwsYXBwbGljYXRpb24veGh0bWwreG1sLGFwcGxpY2F0aW9uL3htbDtxPTAuOSxpbWFnZS9hdmlmLGltYWdlL3dlYnAsaW1hZ2UvYXBuZywqLyo7cT0wLjgsYXBwbGljYXRpb24vc2lnbmVkLWV4Y2hhbmdlO3Y9YjM7cT0wLjcNClJlZmVyZXI6IGh0dHA6Ly8xMC4xMjkuMjA0LjE5Ny9zaWdudXAucGhwDQpBY2NlcHQtRW5jb2Rpbmc6IGd6aXAsIGRlZmxhdGUNCkFjY2VwdC1MYW5ndWFnZTogZW4tVVMsZW47cT0wLjkNCkNvbm5lY3Rpb246IGNsb3NlDQoNCg==]]></request>
+    <status>200</status>
+    <responselength>263</responselength>
+    <mimetype>XML</mimetype>
+    <response base64="true"><![CDATA[SFRUUC8xLjEgMjAwIE9LDQpEYXRlOiBUaHUsIDAyIE1hciAyMDIzIDE5OjA3OjI2IEdNVA0KU2VydmVyOiBBcGFjaGUvMi40LjU0IChXaW42NCkgUEhQLzguMS4xMw0KWC1Qb3dlcmVkLUJ5OiBQSFAvOC4xLjEzDQpDb250ZW50LUxlbmd0aDogNjANCkNvbm5lY3Rpb246IGNsb3NlDQpDb250ZW50LVR5cGU6IHRleHQvaHRtbDsgY2hhcnNldD1VVEYtOA0KDQo8Yj5Tb3JyeSwgYnV0IHVzZXIgcmVnaXN0cmF0aW9uIGlzIHRlbXBvcmFyaWx5IGRpc2FibGVkLjwvYj4=]]></response>
+    <comment></comment>
+  </item>
+</items>
