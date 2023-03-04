@@ -1,0 +1,9 @@
+HTTP/1.1 200 OK
+Date: Thu, 02 Mar 2023 19:07:25 GMT
+Server: Apache/2.4.54 (Win64) PHP/8.1.13
+X-Powered-By: PHP/8.1.13
+Content-Length: 18
+Connection: close
+Content-Type: application/json
+
+{"status":"taken"}
